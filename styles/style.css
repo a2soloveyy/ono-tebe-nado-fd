@@ -163,16 +163,6 @@
   max-height: 596px;
 }
 
-.card {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 1;
-}
-
 .lots__heading {
   font-size: 40px;
   font-weight: 700;
@@ -292,12 +282,15 @@ body {
 }
 
 .card {
-  display: flex;
   position: relative;
   min-height: 450px;
   padding: 50px 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .card_type_film {
@@ -343,11 +336,11 @@ body {
   padding: 180px 50px 90px;
   background-color: white;
   color: #000000;
-  position: relative; /* Добавляем для позиционирования псевдо-элемента */
-  display: flex; /* Меняем grid на flex */
-  flex-direction: row; /* Колонка */
-  justify-content: space-between; /* Распределение пространства */
-  align-items: center; 
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__menu {
