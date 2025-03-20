@@ -4,8 +4,8 @@
   align-items: center;
   padding: 92px 50px;
   gap: 25px;
-  
 }
+
 .header__menu {
   justify-self: start;
 }
@@ -67,7 +67,6 @@
   font-style: normal;
   line-height: 1.35;
   font-size: 18px;
-  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
@@ -225,11 +224,6 @@
   margin-top: 48px;
 }
 
-.about {
-  padding: 100px 50px;
-  background: hsl(0, 0%, 100%);
-}
-
 body {
   min-width: 1100px;
   max-width: 1440px;
@@ -242,6 +236,7 @@ body {
   grid-template-columns: 350px 1fr;
   gap: 25px;
   padding: 100px 50px;
+  background: hsl(0, 0%, 100%);
 }
 
 .about__logo {
@@ -289,7 +284,7 @@ body {
   display: block;
   height: 100%;
   text-decoration: none;
-  transition: transform 0.3s; 
+  transition: transform 0.3s;
 }
 
 .card-link:hover {
@@ -303,7 +298,6 @@ body {
   padding: 50px 40px;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s;
 }
 
 .card_type_film {
@@ -345,12 +339,15 @@ body {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   row-gap: 40px;
   padding: 180px 50px 90px;
   background-color: white;
   color: #000000;
+  position: relative; /* Добавляем для позиционирования псевдо-элемента */
+  display: flex; /* Меняем grid на flex */
+  flex-direction: row; /* Колонка */
+  justify-content: space-between; /* Распределение пространства */
+  align-items: center; 
 }
 
 .footer__menu {
@@ -364,7 +361,6 @@ body {
 
 .footer__menu-link {
   font-size: 18px;
-  text-decoration: underline;
 }
 
 .footer__social-list {
@@ -372,23 +368,13 @@ body {
   gap: 48px;
   list-style: none;
   grid-column: span 2;
-  justify-self: center;
+  justify-self: end;
 }
 
 .footer__social-icon {
   width: 48px;
   height: 48px;
   object-fit: cover;
-}
-
-.footer__menu-list-item:nth-child(2) .footer__menu-link,
-.footer__menu-list-item:nth-child(3) .footer__menu-link {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.footer__menu-list-item:first-child .footer__menu-link {
-  text-decoration: none;
 }
 
 .header__link:hover,
