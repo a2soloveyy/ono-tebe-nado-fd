@@ -1,15 +1,7 @@
-.cover__description-text,
-.bet-button,
-.lots__heading,
-.about__title,
-.card__title {
-    text-transform: uppercase;
-}
-
 .header {
+  margin: 92px 50px 96px 50px;
   display: grid;
   grid-template-columns: 3.9fr 0.9fr 3.9fr;
-  margin: 92px 50px 96px 50px;
 }
 
 .header__links-list {
@@ -46,6 +38,9 @@
   border-bottom: 1px solid black;
 }
 
+/* Элементу с классои header__logo строго заданы ращмеры,
+так как это логотип, имеющий строгий размер */
+
 .header__logo {
   display: grid;
   align-content: start;
@@ -74,6 +69,7 @@
   color: #000;
   font-family: Raleway, sans-serif;
   font-size: 18px;
+  font-style: normal;
   font-weight: 400;
   line-height: 23.6px;
 }
@@ -92,19 +88,18 @@
   align-self: flex-start;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.footer__address {
-  justify-self: start;
-}
+/* Элементу с классом cover строго заданы размеры,
+так как это фоновое изображение */
 
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .cover__title {
@@ -120,13 +115,6 @@
     "end end end ";
 }
 
-.aligned-text {
-  margin: 0px 50px;
-  text-align: start;
-  grid-area: start;
-  line-height: 115%;
-}
-
 .aligned-text_right,
 .aligned-text_center,
 .aligned-text {
@@ -138,13 +126,19 @@
   letter-spacing: 30px;
 }
 
+.aligned-text {
+  text-align: start;
+  grid-area: start;
+  line-height: 115%;
+  margin: 0px 50px;
+}
+
 .aligned-text_center {
   line-height: 100%;
   text-align: center;
   grid-area: center;
-  justify-self: center;
   margin: 0px 95px 0px 65px;
-  
+  justify-self: center;
 }
 
 .aligned-text_right {
@@ -162,23 +156,23 @@
   letter-spacing: 0px;
 }
 
-.bet-button,
-.cover__description-text {
-  color: #fff;
-  text-align: center;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-}
-
 .cover__description {
   display: flex;
   justify-content: space-between;
   margin: 105px 50px 0px 50px;
   padding-bottom: 50px;
+}
+
+.bet-button,
+.cover__description-text {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .cover__description-text {
@@ -190,15 +184,15 @@
   word-spacing: 17px;
 }
 
+.cover__description-text-new-word-spacing{
+  word-spacing: 19px;
+}
+
 .bet-button {
   display: flex;
   padding: 12px 32px;
   border: 1px solid #ffffff;
   background: none;
-}
-
-.cover__description-text-new-word-spacing{
-  word-spacing: 19px;
 }
 
 .lots {
@@ -225,6 +219,18 @@
   flex-wrap: wrap;
 }
 
+.card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+/* Элеменам с классом card задал четку ширину, 
+так как данный элемент состоит из определенного контента и 
+для его позиционированиия необходимо значение ширины
+Для корректного отображения на устройствах с другой диагональю экрана 
+родительскому списку добавлено свойство flex-wrap: wrap */
+
 .card {
   z-index: 2;
   flex-grow: 1;
@@ -233,14 +239,8 @@
   height: 100%;
   padding: 50px 40px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-}
-
-.card-link {
-  text-decoration: none;
-  display: block;
-  height: 100%;
+  justify-content: space-between;
 }
 
 .card_type_film {
@@ -258,16 +258,6 @@
   background-size: cover;
 }
 
-.card__text {
-  color: #fff;
-  font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  justify-content: space-around;
-}
-
 .card__title {
   color: #fff;
   font-family: Raleway, sans-serif;
@@ -280,9 +270,14 @@
   text-decoration-skip-ink: none;
 }
 
-.lots__look-more-link-text {
-  text-decoration: none;
-  border-bottom: 1px solid black;
+.card__text {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  justify-content: space-around;
 }
 
 .lots__look-more-link {
@@ -292,30 +287,27 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-decoration: none;
   margin-top: 30px;
   margin-left: 40px;
-  
+  text-decoration: none;
 }
 
+.lots__look-more-link-text {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
 
 .about {
   margin: 180px 50px 184px 50px;
-}
-
-.about__text {
-  color: #000;
-  font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23px;
 }
 
 .about__column {
   display: grid;
   grid-template-columns: 430px 1fr;
 }
+
+/* В случае с классом about__logo я строго указал размеры блока, так как
+это необходимо для формирования черного круга нужного размера */
 
 .about__logo {
   display: flex;
@@ -326,12 +318,15 @@
   justify-self: center;
 }
 
+/* В случае с классом about__logo-image я строго указал его размеры, 
+так как это класс, относящийся к логотипу */
+
 .about__logo-image {
   display: grid;
   width: 148px;
   height: 114px;
-  margin-left: 46px;
   align-self: center;
+  margin-left: 46px;
 }
 
 .about__title-and-text-wrapper {
@@ -351,6 +346,15 @@
   margin-bottom: 70px;
 }
 
+.about__text {
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
 footer {
   margin: 0px 50px 90px 50px;
   display: flex;
@@ -363,18 +367,8 @@ footer {
   justify-items: center;
 }
 
-.footer__social-list {
-  list-style-type: none;
-  display: flex;
-  gap: 48px;
-}
-
 .footer__menu-list {
   list-style-type: none;
-}
-
-.footer__social-list-item-logo{
-  width: 48px;
 }
 
 .footer__menu-link {
@@ -382,15 +376,30 @@ footer {
   align-self: center;
   color: #000;
   text-align: center;
-  text-decoration-skip-ink: none;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration-skip-ink: none;
 }
 
 .footer__menu-link_active {
-  border-bottom: none;
   text-decoration: none;
+  border-bottom: none;
+}
+
+/* В элементе с классом foter__social-list я задал значения ширины
+для того, чтобы не задавать размеры каждой иконке социальной сети. 
+В моем случае достаточно выставить нужное расстояние между элементами
+и иконки становятся нужного размера. */
+
+.footer__social-list {
+  list-style-type: none;
+  display: flex;
+  gap: 48px;
+}
+
+.footer__social-list-item-logo{
+  width: 48px;
 }
