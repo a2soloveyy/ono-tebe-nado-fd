@@ -12,6 +12,8 @@
   align-items: center;
   padding: 92px 50px;
   gap: 25px;
+  width: 1100px;
+  height: 293px;
 }
 
 .header__menu {
@@ -56,7 +58,7 @@
 .header__logo {
   display: block;
   width: 200px;
-  justify-self: start; 
+  justify-self: start;
 }
 
 .header__logo-image {
@@ -94,6 +96,8 @@
   min-height: 757px;
   color: #fff;
   z-index: 1;
+  width: 1100px;
+  height: 757px;
 }
 
 .cover__description {
@@ -103,6 +107,8 @@
   margin-top: 128px;
   gap: 40px;
   z-index: 2;
+  width: 1000px;
+  height: 51px;
 }
 
 .cover__description-text {
@@ -115,13 +121,13 @@
 }
 
 .bet-button {
+  font-family: "Raleway", sans-serif;
   background: transparent;
   border: 1px solid #ffffff;
   padding: 12px 32px;
   color: #ffffff !important;
   vertical-align: middle;
   font-size: 22px;
-  font-family: "Raleway", sans-serif;
   cursor: pointer;
   width: 256px;
   text-align: center;
@@ -145,16 +151,18 @@
 
 .lots {
   margin-top: 180px;
-  padding-left: 40px;
-  width: calc(100% - 40px); 
-  width: 100%;
+  padding-left: 92px;
+  width: 1052px;
+  height: 723px;
   box-sizing: border-box;
-  margin-bottom: -30px; 
+  margin-bottom: -30px;
 }
 
 .lots__more {
   display: inline-block;
   margin: 30px 0 0 60px;
+  width: 192px;
+  height: 25px;
 }
 
 .lot {
@@ -183,6 +191,8 @@
 .lots__heading {
   font-size: 40px;
   font-weight: 700;
+  width: 121px;
+  height: 47px;
   text-transform: uppercase;
   margin: 0 0 27px 60px;
   position: relative;
@@ -202,6 +212,8 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 1;
+  width: 1000px;
+  height: 385px;
   text-transform: uppercase;
   letter-spacing: 30px;
   margin-bottom: 20px;
@@ -235,9 +247,10 @@
 }
 
 body {
-  max-width: 1440px;
+  place-items: center;
+  min-width: 2200px;
+  min-height: 6056px;
   margin: 0 auto;
-  min-width: 1100px;
   color: var(--text-dark);
 }
 
@@ -247,6 +260,8 @@ body {
   gap: 25px;
   padding: 180px 50px;
   background: hsl(0, 0%, 100%);
+  width: 1052px;
+  height: 595px;
 }
 
 .about__logo {
@@ -365,7 +380,9 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: -100px;
+  top: 284px;
+  width: 1100px;
+  height: 180px;
   
 }
 
