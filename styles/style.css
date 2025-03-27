@@ -248,15 +248,14 @@
 
 body {
   place-items: center;
-  min-width: 2200px;
-  min-height: 6056px;
+  width: 1100px;
   margin: 0 auto;
   color: var(--text-dark);
 }
 
 .about {
   display: grid;
-  grid-template-columns: 430px 1fr;
+  grid-template-columns: 312px 1fr;
   gap: 25px;
   padding: 180px 50px;
   background: hsl(0, 0%, 100%);
