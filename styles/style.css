@@ -18,7 +18,7 @@
 }
 
 .header__menu {
-  font-family: Raleway;
+  font-family: "Raleway";
   justify-self: start;
   letter-spacing: 0.4px;
   margin-top: -2px;
@@ -110,7 +110,7 @@
   width: 240px;
   height: 98px;
   justify-self: end;
-  font-family: Times, Times New Roman, serif;
+  font-family: "Raleway";
   letter-spacing: 1.1px;
   margin-top: -15px;
   margin-right: 0px;
@@ -171,7 +171,7 @@
 }
 
 .bet-button {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   background: transparent;
   border: 1px solid #ffffff;
   padding: 12px 32px;
@@ -268,26 +268,25 @@
   height: 385px;
   text-transform: uppercase;
   letter-spacing: 30px;
-  font-weight: lighter;
   margin-bottom: 20px;
 }
 
 .aligned-text {
   display: block;
   font-weight: lighter;
-  margin: 9px -1px 35px;
+  margin: 9px 7px 34px;
 }
 
 .aligned-text_center {
   text-align: center;
   font-weight: lighter;
-  margin: 11px 329px 36px;
+  margin: 7px 337px 35px;
 }
 
 .aligned-text_right {
   text-align: right;
   font-weight: lighter;
-  margin: 13px -30px 16px;
+  margin: 7px -23px 10px;
 }
 
 .letter-spacing-extended {
@@ -309,7 +308,7 @@ body {
   width: 1100px;
   margin: 0 auto;
   color: var(--text-dark);
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway";
   font-weight: 400;
 }
 
