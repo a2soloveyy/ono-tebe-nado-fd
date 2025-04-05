@@ -242,7 +242,7 @@
 .lots__item {
   flex: 1;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
 }
 
 .lots__heading {
